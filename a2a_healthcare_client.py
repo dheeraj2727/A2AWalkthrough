@@ -27,6 +27,7 @@ async def main() -> None:
     agent = A2AAgent(
         url=f"http://{host}:{healthcare_agent_port}", memory=UnconstrainedMemory()
     )
+    print("3333333333333333333333")
     response = await agent.run(
         "I'm based in Austin, TX. How do I get mental health therapy near me and what does my insurance cover?"
     ).middleware(ConciseGlobalTrajectoryMiddleware())

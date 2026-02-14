@@ -34,7 +34,7 @@ def main() -> None:
     )
     agent: CompiledStateGraph = create_agent(
         model=ChatLiteLLM(
-            model="gemini/gemini-3-flash-preview",
+            model="gemini/gemini-2.5-flash",
             # For Vertex AI:
             # model="vertex_ai/gemini-3-flash-preview",
             max_tokens=1000,

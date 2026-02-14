@@ -14,7 +14,7 @@ class PolicyAgent:
 
     def answer_query(self, prompt: str) -> str:
         response = litellm.completion(
-            model="gemini/gemini-3-flash-preview",
+            model="gemini/gemini-2.5-flash",
             # For Vertex AI
             # model="vertex_ai/gemini-3-flash-preview",
             reasoning_effort="minimal",

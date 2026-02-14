@@ -66,7 +66,7 @@ def main() -> None:
         name="Healthcare Agent",
         description="A personal concierge for Healthcare Information, customized to your policy.",
         llm=GeminiChatModel(
-            "gemini-3-flash-preview",
+            "gemini-2.5-flash",
             allow_parallel_tool_calls=True,
         ),
         # If using Vertex AI
